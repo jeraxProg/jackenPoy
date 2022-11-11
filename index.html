@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock - Paper - Scissors</title>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>	
+
+		<div id="start-container" >
+			<img src="assets/Hunter_x_hunter.png" alt="">
+			<h1>JACK EN POY</h1>	
+			<button onclick="startGame()">Start</button>
+		</div>	
+
+		<div id="container" style="display: none;">		
+			<div id="banner-green">ROCK - PAPER - SCISSORS</div>
+			<h2>Pick One</h2>		
+			<div id="play">
+				<div class="col3 choose" id="rock">
+					<img src="assets/BestIdenticalHagfish-max-1mb.gif"/><br>
+					Bato Ako! Pampokpok!
+				</div>
+				<div class="col3 choose" id="paper">
+					<img src="assets/gon-hunter-x-hunter.gif" alt="Paper"><br>
+					Papel Ako! Pampahid!
+				</div>
+				<div class="col3 choose" id="scissors">
+					<img src="assets/gon-freecs.gif" alt="Scissors"><br>
+					Gunting ako! Pamputol!
+				</div>
+			</div>
+
+
+
+			<div id="banner-pink">Scoreboard</div>	
+
+			<div id="scoreInfo" class="score-info">
+				
+				<div class="col3">
+					<span class="colhead">your score</span><br>
+					<div id="my-score" class="score">0</div>
+					<img src="assets/tumblr_p4m0tqlKnA1wktao5o1_250.gif" alt="">
+				</div>
+				<div class="col3" id="record">
+					<span class="colhead2">record</span><br>
+					<div class="lets-play">You haven't played anything yet.</div>
+					<div class="clear"><br></div>
+				</div>
+				<div   class="col3" id="results">
+				
+					<div id="you-won">
+						<button type="play-again" onClick="window.location.reload();">Play again?</button>
+						
+						<div id="banner-blue">Congrats!</div>
+						<img src="assets/giphy.gif" alt="You won!" style="width: 50%"><br>
+						
+					</div>					
+					<div id="you-lost">
+						<button type="play-again" onClick="window.location.reload();">Play again?</button>
+						<div id="banner-blue">You Lose!</div>
+						<img src="assets/d73b97458f4c3c3615874e469bf0fc23.gif" alt="You lost!" style="width: 50%"><br>
+					
+						
+					</div>
+				</div>	
+					
+				<div class="col3">
+					<span class="colhead">computer score</span><br>
+					<div id="comp-score" class="score">0</div>
+					<img id="robo" src="assets/robo.gif" alt="a robot">
+				</div>
+			</div>
+					
+			
+		</div>
+		<!--container-->
+		<audio class="audio" controls autoplay>
+			
+			<source src="assets/epic_battle_music_1-6275.mp3" type="audio/mpeg">
+		 
+		  </audio>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
