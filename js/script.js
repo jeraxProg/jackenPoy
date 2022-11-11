@@ -101,10 +101,12 @@ function whoWon(playerScore, compScore) {
     const results = document.querySelector('#results');
     const pinkBanner = document.querySelector('#banner-pink');
     const record = document.querySelector('#record')
+    const space = document.querySelector('#space')
     play.style.display = 'none';
     greenBanner.style.display = 'none';
     record.style.display = 'none'
     pinkBanner.style.display = 'none'
+    space.style.display='none'
     results.style.display = 'block'
   }
   if (playerScore == 3) { 
