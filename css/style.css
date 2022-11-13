@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   padding: 0;
   background-repeat: no-repeat;
-  overflow: hidden;
+
   
 }
 
@@ -134,7 +134,7 @@ h2 {
 
 #rock:hover {
   transition: .5s ease;
-  /* background: #77889a; */
+  background: #77889a;
   border-radius: 10px;
   color: #fff;
   transform: scale(1.1);
@@ -144,7 +144,7 @@ h2 {
 
 #paper:hover {
   transition: .5s ease;
-  /* background: #00aede; */
+  background: #77889a;
   border-radius: 10px;
   color: #fff;
   transform: scale(1.1);
@@ -152,7 +152,7 @@ h2 {
 
 #scissors:hover {
   transition: .5s ease;
-  /* background: #ed718b; */
+  background: #77889a;
   border-radius: 10px;
   color: #fff;
   transform: scale(1.1);
@@ -172,6 +172,7 @@ h2 {
 #record {
   line-height: 180%;
   font-size: 0.813em;
+
 }
 
 .left {

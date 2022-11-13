@@ -41,7 +41,7 @@ function playRound() {
   updateScore(playerSelection, compSelection);
   whoWon(playerScore, compScore);
 }
-//--------------------------//
+//------------ ADD in Record playerSelection and CompSelection per Round-------------//
 function displayPlayerItem(playerSelection) {
   const left = document.createElement('div');
   const yourRecord = document.createElement('span');
@@ -102,19 +102,20 @@ function whoWon(playerScore, compScore) {
     const pinkBanner = document.querySelector('#banner-pink');
     const record = document.querySelector('#record')
     const space = document.querySelector('#space')
+    const optionTitle = document.querySelector('#option_title')
     play.style.display = 'none';
     greenBanner.style.display = 'none';
-    record.style.display = 'none'
-    pinkBanner.style.display = 'none'
-    space.style.display='none'
-    results.style.display = 'block'
+    record.style.display = 'none';
+    pinkBanner.style.display = 'none';
+    space.style.display='none';
+    optionTitle.style.display='none';
+    results.style.display = 'block';
   }
   if (playerScore == 3) { 
     const youWon = document.querySelector('#you-won');
     youWon.style.display = 'block'; 
   
    
-    
   } 
   if (compScore == 3) {
     const youLost = document.querySelector('#you-lost');
